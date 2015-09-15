@@ -1,12 +1,10 @@
-prims = []
+def largestPrimeFactor(n):
+    i = 2
+    while i * i <= n:
+        if n % i:
+            i += 1
+        else:
+            n //= i
+    return n
 
-for x in range(2, 600851475143):
-    if x % 2 == 0:
-        continue
-    found = True
-    for y in range(2, x-1):
-        if x % y == 0:
-            found = False
-            break
-    if found:
-        print "Found prim", x
+print largestPrimeFactor(600851475143)
