@@ -1,19 +1,10 @@
 
 
-def evenDevided(maxDiv, maxNumber):
-    for x in range(1, maxNumber):
-        f = True
-        for y in range(2, maxDiv):
-            if x % y == 0:
-                print x, " passes", y
-            else:
-                print x, " failed", y
-                f = False        
-                break
-                
-
-        if f:
-            return x
+def evenDevided():
+    i = 20
+    while(i % 2 != 0 or i % 3 != 0 or i % 4 != 0 or i % 5 != 0 or i % 6 != 0 or i % 7 != 0 or i % 8 != 0 or i % 9 != 0 or i % 10 != 0 or i % 11 != 0 or i % 12 != 0 or i % 13 != 0 or i % 14 != 0 or i % 15 != 0 or i % 16 != 0 or i % 17 != 0 or i % 18 != 0 or i % 19 != 0 or i % 20 != 0):
+        i = i + 20
 
 
-print evenDevided(21, 100000)
+    return i
+print evenDevided()
